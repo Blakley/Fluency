@@ -161,10 +161,10 @@ mime-type="text/markdown">
 <div class="jp-InputArea jp-Cell-inputArea">
 
 
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor"
+<div class="jp- jp-Editor jp-InputArea-editor"
 data-type="inline">
 
-<div class="CodeMirror cm-s-jupyter">
+<div class=" cm-s-jupyter">
 
 
 </div>
@@ -235,24 +235,20 @@ mime-type="text/markdown">
 <div class="jp-InputArea jp-Cell-inputArea">
 
 
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor"
+<div class="jp- jp-Editor jp-InputArea-editor"
 data-type="inline">
 
-<div class="CodeMirror cm-s-jupyter">
-
-    ```python
+```python
     import pandas as pd
 
     # load the csv data (small version for testing, large for actual deployment)
     df = pd.read_csv('small.txt', names=['english_text', 'french_text', 'attr'], usecols=['english_text', 'french_text'], sep='\t')
-    # df = pd.read_csv('large.txt', names=['english_text', 'french_text', 'attr'], usecols=['english_text', 'french_text'], sep='\t')
 
     df = df.sample(frac=1, random_state=42)
     df = df.reset_index(drop=True)
 
     print(f"Dataset length: {len(df)}")
-    ```
-</div>
+```
 
 </div>
 
@@ -365,10 +361,10 @@ mime-type="text/markdown">
 
 </div>
 
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor"
+<div class="jp- jp-Editor jp-InputArea-editor"
 data-type="inline">
 
-<div class="CodeMirror cm-s-jupyter">
+<div class=" cm-s-jupyter">
 
 </div>
 
@@ -483,10 +479,10 @@ mime-type="text/html">
 
 </div>
 
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor"
+<div class="jp- jp-Editor jp-InputArea-editor"
 data-type="inline">
 
-<div class="CodeMirror cm-s-jupyter">
+<div class=" cm-s-jupyter">
 
 </div>
 
@@ -610,13 +606,12 @@ format that the neural network can process numerically.
 
 </div>
 
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor"
+<div class="jp- jp-Editor jp-InputArea-editor"
 data-type="inline">
 
-<div class="CodeMirror cm-s-jupyter">
+<div class=" cm-s-jupyter">
 
-<div class="highlight hl-ipython3">
-
+```python
     from tensorflow.keras.preprocessing.text import Tokenizer
     from tensorflow.keras.preprocessing.sequence import pad_sequences
 
@@ -632,8 +627,7 @@ data-type="inline">
     french_tokenizer .fit_on_texts(french_text)
     french_sequences = french_tokenizer .texts_to_sequences(french_text)
     french_y = pad_sequences(french_sequences, maxlen=sequence_len + 1, padding='post')
-
-</div>
+```
 
 </div>
 
@@ -705,20 +699,18 @@ determines the dimensionality of the model's output layer.</td>
 
 </div>
 
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor"
+<div class="jp- jp-Editor jp-InputArea-editor"
 data-type="inline">
 
-<div class="CodeMirror cm-s-jupyter">
+<div class=" cm-s-jupyter">
 
-<div class="highlight hl-ipython3">
-
+```python
     english_vocabulary_size = len(english_tokenizer.word_index) + 1
     french_vocabulary_size = len(french_tokenizer.word_index) + 1
 
-    print(f'Vocabulary size (English) : {english_vocabulary_size}')
-    print(f'Vocabulary size (French)  : {french_vocabulary_size}')
-
-</div>
+    print(f'Vocabulary size (English) : {english_vocabulary_size}') # 6033
+    print(f'Vocabulary size (French)  : {french_vocabulary_size}')  # 12197
+```
 
 </div>
 
@@ -742,13 +734,6 @@ data-type="inline">
 
 </div>
 
-<div class="jp-RenderedText jp-OutputArea-output"
-mime-type="text/plain">
-
-    Vocabulary size (English) : 6033
-    Vocabulary size (French)  : 12197
-
-</div>
 
 </div>
 
@@ -794,10 +779,10 @@ mime-type="text/plain">
 
 </div>
 
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor"
+<div class="jp- jp-Editor jp-InputArea-editor"
 data-type="inline">
 
-<div class="CodeMirror cm-s-jupyter">
+<div class=" cm-s-jupyter">
 
 
 </div>
@@ -862,10 +847,10 @@ Below is an outline of the model architecture:
 
 </div>
 
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor"
+<div class="jp- jp-Editor jp-InputArea-editor"
 data-type="inline">
 
-<div class="CodeMirror cm-s-jupyter">
+<div class=" cm-s-jupyter">
 
 
 </div>
@@ -951,10 +936,10 @@ set. The training process will include the following steps:
 
 </div>
 
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor"
+<div class="jp- jp-Editor jp-InputArea-editor"
 data-type="inline">
 
-<div class="CodeMirror cm-s-jupyter">
+<div class=" cm-s-jupyter">
 
 
 </div>
@@ -1028,10 +1013,10 @@ mime-type="text/markdown">
 
 </div>
 
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor"
+<div class="jp- jp-Editor jp-InputArea-editor"
 data-type="inline">
 
-<div class="CodeMirror cm-s-jupyter">
+<div class=" cm-s-jupyter">
 
 
 </div>
@@ -1094,7 +1079,7 @@ mime-type="text/markdown">
 
 ![Image Alt Text](src/training.PNG)
 
-<div class="CodeMirror cm-s-jupyter">
+<div class=" cm-s-jupyter">
 
 
 
@@ -1200,10 +1185,10 @@ Handle the translation process based on the model's predictions.
 
 </div>
 
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor"
+<div class="jp- jp-Editor jp-InputArea-editor"
 data-type="inline">
 
-<div class="CodeMirror cm-s-jupyter">
+<div class=" cm-s-jupyter">
 
 
 
@@ -1232,10 +1217,10 @@ data-type="inline">
 
 </div>
 
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor"
+<div class="jp- jp-Editor jp-InputArea-editor"
 data-type="inline">
 
-<div class="CodeMirror cm-s-jupyter">
+<div class=" cm-s-jupyter">
 
 
 </div>
@@ -1283,10 +1268,10 @@ data-type="inline">
 
 </div>
 
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor"
+<div class="jp- jp-Editor jp-InputArea-editor"
 data-type="inline">
 
-<div class="CodeMirror cm-s-jupyter">
+<div class=" cm-s-jupyter">
 
 
 </div>
@@ -1407,10 +1392,10 @@ mime-type="text/markdown">
 
 </div>
 
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor"
+<div class="jp- jp-Editor jp-InputArea-editor"
 data-type="inline">
 
-<div class="CodeMirror cm-s-jupyter">
+<div class=" cm-s-jupyter">
 
 
 </div>
@@ -1439,10 +1424,10 @@ data-type="inline">
 
 </div>
 
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor"
+<div class="jp- jp-Editor jp-InputArea-editor"
 data-type="inline">
 
-<div class="CodeMirror cm-s-jupyter">
+<div class=" cm-s-jupyter">
 
 
 </div>
@@ -1491,10 +1476,10 @@ data-type="inline">
 
 </div>
 
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor"
+<div class="jp- jp-Editor jp-InputArea-editor"
 data-type="inline">
 
-<div class="CodeMirror cm-s-jupyter">
+<div class=" cm-s-jupyter">
 
 </div>
 
@@ -1589,7 +1574,7 @@ mime-type="text/markdown">
 
 </div>
 
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor"
+<div class="jp- jp-Editor jp-InputArea-editor"
 data-type="inline">
 
 
@@ -1685,10 +1670,10 @@ mime-type="text/plain">
 
 </div>
 
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor"
+<div class="jp- jp-Editor jp-InputArea-editor"
 data-type="inline">
 
-<div class="CodeMirror cm-s-jupyter">
+<div class=" cm-s-jupyter">
 
 <div class="highlight hl-ipython3">
 
