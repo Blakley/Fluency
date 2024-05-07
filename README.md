@@ -1092,6 +1092,7 @@ mime-type="text/markdown">
 
 #### Assess the model's learning accuracy
 
+![Image Alt Text](src/training.PNG)
 
 <div class="CodeMirror cm-s-jupyter">
 
