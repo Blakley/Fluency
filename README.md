@@ -69,21 +69,6 @@ mime-type="text/markdown">
 
 </div>
 
-<div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput"
-mime-type="text/markdown">
-
-### Table of contents<span id="top" class="anchor"></span><a href="#Table-of-contents" class="anchor-link">¶</a>
-
-- [Data Loading](#data-loading-1)
-- [Data Preparation](#data-preparation-2)
-- [Language Tokenization](#language-tokenization-3)
-- [Model Architecture](#model-architecture-4)
-- [Model Training and Evaluation](#model-training-evaluation-5)
-- [Translation Testing](#translation-testing-6)
-- [Translation Comparison](#translation-comparison-7)
-
-</div>
-
 </div>
 
 </div>
@@ -152,7 +137,7 @@ effective model training.
 <div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput"
 mime-type="text/markdown">
 
-#### GPU Check<a href="#GPU-Check" class="anchor-link">¶</a>
+#### GPU Check<a href="#GPU-Check" class="anchor-link"></a>
 
 - 🖥️ Model testing and training was conducted using a dedicated GPU,
   this check ensures that the GPU is selected.
@@ -227,7 +212,7 @@ data-type="inline">
 <div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput"
 mime-type="text/markdown">
 
-#### Loading The data<a href="#Loading-The-data" class="anchor-link">¶</a>
+#### Loading The data<a href="#Loading-The-data" class="anchor-link"></a>
 
 - Load the compiled English-French language pairs file
 
@@ -355,7 +340,7 @@ formatted and ready to be used for training our deep learning model.
 <div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput"
 mime-type="text/markdown">
 
-#### Handling language data formatting<a href="#Handling-language-data-formatting" class="anchor-link">¶</a>
+#### Handling language data formatting<a href="#Handling-language-data-formatting" class="anchor-link"></a>
 
 </div>
 
@@ -598,7 +583,7 @@ for inputting into our mode
 <div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput"
 mime-type="text/markdown">
 
-### Fit the language tokenizers<a href="#Fit-the-language-tokenizers" class="anchor-link">¶</a>
+### Fit the language tokenizers<a href="#Fit-the-language-tokenizers" class="anchor-link"></a>
 
 ⚙️ Tokenizers are fitted to the training data to convert our text into a
 format that the neural network can process numerically.
