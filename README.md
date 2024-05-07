@@ -134,16 +134,6 @@ effective model training.
 
 </div>
 
-<div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput"
-mime-type="text/markdown">
-
-#### GPU Check<a href="#GPU-Check" class="anchor-link"></a>
-
-- 🖥️ Model testing and training was conducted using a dedicated GPU,
-  this check ensures that the GPU is selected.
-
-</div>
-
 </div>
 
 </div>
