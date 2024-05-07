@@ -1,6 +1,7 @@
 # Seq2Seq-Translation
-Implementation of a Sequence-to-Sequence (Seq2Seq) model for language translation using deep learning.
 
+- Implementation of a Sequence-to-Sequence (Seq2Seq) model for language translation using deep learning.
+- Integrates into a desktop notification language-learning application
 ---
 
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
