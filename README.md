@@ -1,4 +1,4 @@
-# Fluency - Language Learning Desktop Application
+# Fluency
 
 - A desktop notification app that uses a Seq2Seq model to allow users to create various language notifications.
 ---
